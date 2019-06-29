@@ -5,8 +5,13 @@ def fizzbuzz(int)
     "Fizz" #Go fizz
   elsif int % 5 == 0 # if the number int is divisible by 5
     "Buzz" # Go buzz
-  elsif int % 3 || 5 == 0 # if the number int is divisible by 3 or 5
+  elsif int % 15 == 0 # if the number int is divisible by 3 or 5
     "FizzBuzz"
-  else "nil"
+  else 
+    nil
   end
 end
+
+fizzbuzz(3) # => You should see a return of "Fizz"
+fizzbuzz(5) # => You should see a return of nil
+fizzbuzz() # You should get an ArgumentError
