@@ -17,12 +17,12 @@
 # fizzbuzz() # You should get an ArgumentError
 # fizzbuzz(15) # You should see a return of "FizzBuzz"
 
-def fizzbuzz (someNumber)
-    if (someNumber%3 == 0 && someNumber%5 == 0)
+def fizzbuzz (int)
+    if (int % 3 == 0 && int % 5 == 0)
       fizz_15 = "FizzBuzz"
-    elsif someNumber%3 == 0
+    elsif int % 3 == 0
       fizz_3 = "Fizz"
-    elsif someNumber%5 == 0
+    elsif int % 5 == 0
       fizz_5 = "Buzz"
     else
       fizz_4 = nil
